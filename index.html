@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Developer Tools - Instant Download</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0a0a0f;color:#e0e0e0;line-height:1.6}
+.container{max-width:900px;margin:0 auto;padding:40px 20px}
+h1{font-size:2.2em;margin-bottom:10px;background:linear-gradient(135deg,#6366f1,#a855f7);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.subtitle{color:#888;font-size:1.1em;margin-bottom:40px}
+.product{background:#14141f;border:1px solid #2a2a3a;border-radius:12px;padding:30px;margin-bottom:24px;transition:border-color .2s}
+.product:hover{border-color:#6366f1}
+.product h2{font-size:1.4em;margin-bottom:8px}
+.product .price{font-size:1.8em;font-weight:700;color:#6366f1;margin:12px 0}
+.product .desc{color:#aaa;margin-bottom:16px;font-size:0.95em}
+.product .features{list-style:none;margin-bottom:20px}
+.product .features li{padding:6px 0;color:#bbb;font-size:0.9em}
+.product .features li::before{content:"✓ ";color:#22c55e}
+.buy-btn{display:inline-block;padding:12px 32px;background:linear-gradient(135deg,#6366f1,#a855f7);color:#fff;border:none;border-radius:8px;font-size:1em;cursor:pointer;text-decoration:none;transition:opacity .2s}
+.buy-btn:hover{opacity:.9}
+.payment-info{background:#1a1a2e;border:1px solid #2a2a4a;border-radius:8px;padding:16px;margin-top:16px;display:none}
+.payment-info.show{display:block}
+.payment-info p{margin-bottom:8px;font-size:0.9em}
+.payment-info .address{background:#0a0a1a;padding:10px;border-radius:4px;font-family:monospace;word-break:break-all;font-size:0.85em;color:#22c55e}
+.footer{text-align:center;color:#555;font-size:0.85em;margin-top:40px;padding-top:20px;border-top:1px solid #1a1a2a}
+.dl{background:#0a0a1a;padding:12px;border-radius:8px;margin-top:12px;font-family:monospace;word-break:break-all;color:#22c55e;display:none}
+.dl.show{display:block}
+.sep{height:1px;background:#2a2a3a;margin:24px 0}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>AI Developer Tools</h1>
+<p class="subtitle">Instant download · Developer utilities for AI-assisted workflows</p>
+
+<div class="product">
+<h2>AI PR Review Agent</h2>
+<div class="price">$29 USD</div>
+<p class="desc">Automated GitHub PR review tool. Pure Python, zero external dependencies.</p>
+<ul class="features">
+<li>OpenAI / DashScope / DeepSeek providers</li>
+<li>Markdown / JSON / Text output</li>
+<li>Public and private repo support</li>
+<li>30-second setup</li>
+<li>Full source + docs included</li>
+</ul>
+<button class="buy-btn" onclick="showPayment('pr-review-agent', 29, 'pr-review-agent')">Buy Now - $29</button>
+<div id="payment-pr-review-agent" class="payment-info">
+<p><strong>Pay with USDT (Solana SPL)</strong></p>
+<p>Send <strong>$29 USDT</strong> to:</p>
+<div class="address">6hdAiHr4kEEuxH1S1pcm7hPgGFb2W8fVuBbFx6ciruBC</div>
+<p style="margin-top:8px;color:#f59e0b">Network: Solana (SPL USDT)</p>
+<p style="margin-top:8px;color:#f59e0b">After payment, contact Telegram @liaodengwanbot to confirm and receive the download.</p>
+</div>
+<div class="sep"></div>
+<p style="color:#888;font-size:0.9em"><strong>Download after payment:</strong></p>
+<div id="dl-pr-review-agent" class="dl">https://github.com/a918124259a/hermes-crypto-agent/releases/download/v0.1/pr-review-agent.tar.gz</div>
+</div>
+
+<div class="product">
+<h2>PR Gen</h2>
+<div class="price">$9 USD</div>
+<p class="desc">AI PR description generator from git diffs. One command to professional PR copy.</p>
+<ul class="features">
+<li>Auto-generates PR description from diff</li>
+<li>Structured output: Summary / Changes / Test Plan</li>
+<li>Conventional Commits format</li>
+<li>No API Key needed</li>
+<li>MIT license</li>
+</ul>
+<button class="buy-btn" onclick="showPayment('pr-gen', 9, 'pr-gen')">Buy Now - $9</button>
+<div id="payment-pr-gen" class="payment-info">
+<p><strong>Pay with USDT (Solana SPL)</strong></p>
+<p>Send <strong>$9 USDT</strong> to:</p>
+<div class="address">6hdAiHr4kEEuxH1S1pcm7hPgGFb2W8fVuBbFx6ciruBC</div>
+<p style="margin-top:8px;color:#f59e0b">Network: Solana (SPL USDT)</p>
+<p style="margin-top:8px;color:#f59e0b">After payment, contact Telegram @liaodengwanbot to confirm and receive the download.</p>
+</div>
+<div class="sep"></div>
+<p style="color:#888;font-size:0.9em"><strong>Download after payment:</strong></p>
+<div id="dl-pr-gen" class="dl">https://github.com/a918124259a/hermes-crypto-agent/releases/download/v0.1/pr-gen.tar.gz</div>
+</div>
+
+<div class="product">
+<h2>Crypto Price Fetch Skill</h2>
+<div class="price">$9 USD</div>
+<p class="desc">Hermes skill to fetch live crypto prices from Binance/OKX via browser fetch. Works in restricted networks.</p>
+<ul class="features">
+<li>One-command BTC/ETH price lookup</li>
+<li>No API key needed</li>
+<li>Pure browser fetch, no Python deps</li>
+</ul>
+<button class="buy-btn" onclick="showPayment('crypto-price-fetch', 9, 'crypto-price-fetch')">Buy Now - $9</button>
+<div id="payment-crypto-price-fetch" class="payment-info">
+<p><strong>Pay with USDT (Solana SPL)</strong></p>
+<p>Send <strong>$9 USDT</strong> to:</p>
+<div class="address">6hdAiHr4kEEuxH1S1pcm7hPgGFb2W8fVuBbFx6ciruBC</div>
+<p style="margin-top:8px;color:#f59e0b">Network: Solana (SPL USDT)</p>
+<p style="margin-top:8px;color:#f59e0b">After payment, contact Telegram @liaodengwanbot to confirm and receive the download.</p>
+</div>
+<div class="sep"></div>
+<p style="color:#888;font-size:0.9em"><strong>Download after payment:</strong></p>
+<div id="dl-crypto-price-fetch" class="dl">https://github.com/a918124259a/hermes-crypto-agent/releases/download/v0.1/crypto-price-fetch.tar.gz</div>
+</div>
+
+<div class="footer">
+<p>Payment: USDT (Solana SPL) · Product keys / links are shown immediately on this page after selection</p>
+<p>Support / delivery: Telegram @liaodengwanbot</p>
+</div>
+</div>
+<script>
+function showPayment(id, amount) {
+  document.querySelectorAll('.payment-info').forEach(el => el.classList.remove('show'));
+  document.getElementById('payment-' + id).classList.add('show');
+  document.getElementById('dl-' + id).classList.add('show');
+}
+</script>
+</body>
+</html>

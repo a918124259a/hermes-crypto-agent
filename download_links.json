@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": "pr-review-agent",
+      "name": "AI PR Review Agent",
+      "price": "$29 USDT",
+      "currency": "USDT",
+      "network": "SOL",
+      "solana_address": "6hdAiHr4kEEuxH1S1pcm7hPgGFb2W8fVuBbFx6ciruBC",
+      "download_url": "https://github.com/a918124259a/hermes-crypto-agent/releases/download/v0.1/pr-review-agent.tar.gz",
+      "telegram": "@liaodengwanbot"
+    },
+    {
+      "id": "pr-gen",
+      "name": "PR Gen",
+      "price": "$9 USDT",
+      "currency": "USDT",
+      "network": "SOL",
+      "solana_address": "6hdAiHr4kEEuxH1S1pcm7hPgGFb2W8fVuBbFx6ciruBC",
+      "download_url": "https://github.com/a918124259a/hermes-crypto-agent/releases/download/v0.1/pr-gen.tar.gz",
+      "telegram": "@liaodengwanbot"
+    },
+    {
+      "id": "crypto-price-fetch",
+      "name": "Crypto Price Fetch Skill",
+      "price": "$9 USDT",
+      "currency": "USDT",
+      "network": "SOL",
+      "solana_address": "6hdAiHr4kEEuxH1S1pcm7hPgGFb2W8fVuBbFx6ciruBC",
+      "download_url": "https://github.com/a918124259a/hermes-crypto-agent/releases/download/v0.1/crypto-price-fetch.tar.gz",
+      "telegram": "@liaodengwanbot"
+    }
+  ]
+}

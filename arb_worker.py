@@ -1,4 +1,11 @@
-import urllib.request, json, time, os
+import urllib.request, json, time, os, logging
+
+logging.basicConfig(
+    filename=os.path.join(os.path.dirname(os.path.abspath(__file__)), "arb_worker.log"),
+    level=logging.INFO,
+    format="%(asctime)s %(message)s",
+)
+log = logging.getLogger("arb")
 
 def fetch(symbol):
     url = f"https://api.binance.com/api/v3/ticker/price?symbol={symbol}"
@@ -9,14 +16,11 @@ def fetch(symbol):
     return float(d["price"])
 
 pairs = ["BTCUSDT", "ETHUSDT", "BNBUSDT", "SOLUSDT"]
-logf = open(os.path.dirname(os.path.abspath(__file__)) + "/arb.log", "a")
 while True:
     for p in pairs:
         try:
             px = fetch(p)
-            logf.write(f"{p}: ${px}\n")
+            log.info(f"{p}: ${px}")
         except Exception as e:
-            logf.write(f"{p}: ERROR {e}\n")
-    logf.write("---\n")
-    logf.flush()
-    time.sleep(5)
+            log.info(f"{p}: ERROR {e}")
+    log.info("---")
